@@ -7,6 +7,7 @@ pipeline {
                 sh """
 
                 rm -rf mani test yy
+                ls -l
 
                 """
             }
