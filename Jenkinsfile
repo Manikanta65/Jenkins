@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh """
 
-                mkdir mani
+                mkdir test
 
                 """
             }
