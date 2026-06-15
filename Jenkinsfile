@@ -5,9 +5,9 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                
-                echo 'Building..'
-                
+
+                mkdir mani
+
                 """
             }
         }
