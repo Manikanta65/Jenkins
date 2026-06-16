@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                      docker run -d -p 80:80 manikanta65docker/frontend:1.0.0
+                      sudo docker run -d -p 80:80 manikanta65docker/frontend:1.0.0
                 """
             }
         }
