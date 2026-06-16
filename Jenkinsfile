@@ -1,25 +1,25 @@
 pipeline {
     agent any
-
     stages {
         stage('Build') {
             steps {
                 sh """
-
-                rm -rf mani test yy
-                ls -l
-
+                      docker run -d -p 80:80 manikanta65docker/frontend:1.0.0
                 """
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh """
+
+                """
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                sh """
+
+                """
             }
         }
     }
