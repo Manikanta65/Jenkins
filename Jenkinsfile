@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                  docker run -d -p 80:80 nginx
+                   docker run -d -p 80:80 nginx
                 """
             }
         }
